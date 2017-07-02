@@ -1,0 +1,28 @@
+{
+  "name": "coral-mongo-attachments",
+  "version": "1.0.0",
+  "description": "Specialized module for producing a very specific Mongodb document structure. It will host arrays of things (for example, image urls) under a nested document called attachments (or any other user given name). Its primary aim is to facilitate and normalize the creation of Post and Page types of CRUDs",
+  "main":  "mongo-attachments.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --colors --reporter spec ./**/*spec.js"
+  },
+  "author": "Diego Villaseñor",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-watch": "^4.3.11",
+    "jasmine-node": "^1.14.5",
+    "chai": "^3.5.0",
+    "request": "^2.79.0",
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.10"
+  },
+  "dependencies": {
+    "coral-mongo-tasks": "^1.0.0",
+    "coral-std-library": "^1.0.0",
+    "data.task": "^3.1.1",
+    "ramda": "^0.23.0"
+  }
+}
